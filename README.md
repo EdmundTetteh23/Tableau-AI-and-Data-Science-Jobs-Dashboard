@@ -36,20 +36,19 @@ To prepare the flat dataset (`ai_ds_job_salaries_2026`) for optimal modeling and
 
 ---
 
-#### **Data Model and Relationships**
+## Data Model and Relationships
+The transformed data architecture follows a clean Star Schema built inside Tableau's Logical Layer, centering around fact_jobs with one-to-many single-direction relationships to all supporting dimensions:
 
-The transformed data architecture follows a clean **Star Schema** built inside Power BI, centering around `fact_jobs` with one-to-many (`1:*`) single-direction relationships to all supporting dimensions:
-
-* **fact_jobs**: Core transactional fact table recording financial metrics and quantitative attributes (`salary_usd`, `bonus_pct`, `equity_offered_pct`, `certifications_count`, `job_satisfaction_score`, `manages_people`, `remote_ratio`, `team_size`, `weekly_hours`).
-* **dim_company_location**: Lookup table mapping employer geography (`comp_loc_id`, `company_loc`, `company_location`).
-* **dim_company_size**: Classification table for employer scale (`cmp_size_id`, `cmp_size`, `company_size`).
-* **dim_emp_residence**: Lookup table tracking candidate residence geography (`emp_residence_id`, `emp_residence`, `employee_residence`).
-* **dim_employment_type**: Employment status lookup (`emp_type_id`, `employment_type` [e.g., Full-Time, Contract]).
-* **dim_experience_level**: Experience tier lookup (`exp_lvl_id`, `experience_level` [e.g., Entry, Mid, Senior, Executive]).
-* **dim_job_title**: Master job taxonomy table (`job_id`, `job_title`).
-* **dim_industry**: Business sector directory (`industry_id`, `industry`).
-* **dim_primary_skill**: Technical proficiency lookup (`primary_lang_id`, `primary_language`).
-* **dim_education_level**: Academic qualification directory (`edu_level_id`, `education_level`).
+- fact_jobs: Core transactional fact table recording financial metrics and quantitative attributes (`salary_usd`, `bonus_pct`, `equity_offered_pct`, `certifications_count`, `job_satisfaction_score`, `manages_people`, `remote_ratio`, `team_size`, `weekly_hours`).
+- dim_company_location: Lookup table mapping employer geography (comp_loc_id, company_loc, company_location).
+- dim_company_size: Classification table for employer scale (cmp_size_id, cmp_size, company_size).
+- dim_emp_residence: Lookup table tracking candidate residence geography (emp_residence_id, emp_residence, employee_residence).
+- dim_employment_type: Employment status lookup (emp_type_id, employment_type).
+- dim_experience_level: Experience tier lookup (exp_lvl_id, experience_level).
+- dim_job_title: Master job taxonomy table (job_id, job_title).
+- dim_industry: Business sector directory (industry_id, industry).
+- dim_primary_skill: Technical proficiency lookup (primary_lang_id, primary_language).
+- dim_education_level: Academic qualification directory (edu_level_id, education_level).
 
 ## Tech Stack
 - Data Cleaning & ETL: Power Query Excel
