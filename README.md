@@ -26,9 +26,9 @@ AI and Data Science job applicants frequently lack transparent visibility into b
 - Career Trajectory & Experience Mapping: Track level experience, management responsibilities, and specialized education correlate with baseline pay and total compensation growth.
 
 ## Data Transformation and Cleaning
-To prepare the flat dataset (`ai_ds_job_salaries_2026`) for optimal modeling and star-schema integration, several Power Query ETL transformations were applied:
+To prepare the flat dataset (ai_ds_job_salaries_2026) for optimal modeling and star-schema integration, several Power Query ETL transformations were applied:
 
-- Schema Decomposition: Deconstructed the single, dense flat table into a central fact table (`fact_jobs`) and 9 dedicated lookup dimension tables to eliminate data redundancy and enhance report performance.
+- Schema Decomposition: Deconstructed the single, dense flat table into a central fact table (fact_jobs) and 9 dedicated lookup dimension tables to eliminate data redundancy and enhance report performance.
 - Geographic Code Expansion: Standardized two-letter ISO country codes in company_location and employee_residence fields into full country names to improve map visualization readability.
 <img width="1366" height="768" alt="country_loc" src="https://github.com/user-attachments/assets/3a1b4a30-e3e4-48ca-a64e-e319b28adab9" />
 
