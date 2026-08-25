@@ -51,15 +51,8 @@ The transformed data architecture follows a clean **Star Schema** built inside P
 * **dim_primary_skill**: Technical proficiency lookup (`primary_lang_id`, `primary_language`).
 * **dim_education_level**: Academic qualification directory (`edu_level_id`, `education_level`).
 
----
-
-#### **Tech Stack**
-
-* **Data Cleaning & ETL**: Power Query / M Code
-* **Data Modeling**: Power BI Desktop (Star Schema)
-* **Calculations & DAX**: Explicit DAX Measures (Dynamic Salary Aggregations)
-* **Visualization**: Power BI Desktop / Power BI Service
-
----
-
-Whenever you are ready, share the details or screenshots of your dashboard pages, and we will build out the **Dashboards and Visualizations**, **DAX Measures**, **Key Insights**, and **Strategic Recommendations** sections to finish the README.
+## Tech Stack
+- Data Cleaning & ETL: Power Query Excel
+- Data Modeling: Tableau Logical Layer
+- Calculations and Metrics: Tableau Calculated Fields and Dynamic Parameters
+- Visualization: Tableau Desktop
