@@ -59,12 +59,30 @@ The transformed data architecture follows a clean Star Schema built inside Table
 - dim_education_level: Academic qualification directory (edu_level_id, education_level).
 
 ## Tableau Calculations and Business Logic
+Analytical logic and metric parameter switching implemented via dynamic Tableau Calculated Fields and Dynamic Parameters
 
 ## Dashboards and Visualizations
+The solution features a dynamic dashboard layout controlled by an upper Metric Switcher (Job Count vs. Avg. Salary), allowing job candidates to toggle seamlessly between market demand volume and compensation benchmarks across identical visual categories:
+<img width="1600" height="900" alt="Job Count" src="https://github.com/user-attachments/assets/bf1a9e2e-3ef2-4a3f-aa74-12f126fc3ad5" />
+
+<img width="1600" height="900" alt="Avg  Salary" src="https://github.com/user-attachments/assets/561b384d-9067-47d4-b5e3-6a634e88f6f1" />
+
+- Executive KPI Summary: Top-level performance tiles capturing 5.0K Total Jobs, an overall Average Salary of $98.6K, and 12 Distinct Roles.
+- Role & Sector Breakdown: Visualizes listings and compensation across 12 distinct job titles (led by Data Scientist with 709 listings; highest paid being Data Science Manager at $114.4K, LLM Engineer at $110.9K, and AI Engineer at $110.9K) and industries (Technology dominating volume with 1,528 listings; Finance leading pay at $111.8K).
+- Geographic Compensation Distribution: Regional analysis charting market footprint and compensation across company locations (USA leading with 1,786 jobs and $135.7K avg. salary, followed by Australia at $107.3K and Canada at $102.3K).
+- Technical Proficiency Requirements: Demand and pay distribution across primary programming languages (Python dominating demand with 3,129 jobs; Scala and Java commanding the highest average pay at $102.4K and $100.0K).
+- Demographic & Employment Structure: Categorizes roles by Education Level (Bachelors leading volume at 1,903 jobs; PhD leading pay at $114.6K), Experience Level (Entry at $61.0K up to Executive at $164.7K), and Employment Type (Full-time dominating with 4,159 listings and $101.7K average pay).
 
 ## Key Insights
+- High-Value Specialized Roles: Specialized titles like LLM Engineer ($110.9K), AI Engineer ($110.9K), and Machine Learning Engineer ($110.4K) command significantly higher average salaries than generalist roles like Data Analyst ($75.5K) and Business Intelligence Analyst ($75.0K).
+- Geographic Pay Premiums: The USA leads both hiring volume (1,786 listings) and compensation ($135.7K), surpassing European hubs (Great Britain at $100.6K, Germany at $96.4K) and emerging markets (India at 782 listings but lower relative local base compensation).
+- Python Ubiquity vs. Niche Language Pay: Python is the absolute industry standard for job volume (3,129 postings, over 60% of all roles), but niche languages like Scala ($102.4K) and Java ($100.0K) yield higher average pay due to specialized enterprise pipeline requirements.
+- Experience & Academic Returns: Advanced academic credentials (PhD at $114.6K) and senior experience tiers (Senior at $109.7K, Lead at $136.3K, Executive at $164.7K) provide steep salary escalation compared to entry-level baselines ($61.0K).
 
 ## Strategic Recommendations
+- Target High-Yield Specializations: Candidates aiming to maximize salary negotiation leverage should target specialized LLM, AI, and MLOps engineering tracks rather than general BI analytics roles to capture a $35K + compensation premium.
+- Benchmark Regional Parity During Negotiations: Job seekers evaluating remote or cross-border offers should benchmark base pay against US ($135.7K) and Australian ($107.3K) baselines to ensure remote offers reflect true global market value.
+- Pair Python Fluency with Enterprise Tools: While Python is mandatory for securing high interview volume, candidates should build proficiency in enterprise pipeline tools (Scala/Java/SQL) to qualify for top-tier salary bands.
 
 ## Tech Stack
 - Data Cleaning & ETL: Power Query Excel
