@@ -26,6 +26,9 @@ AI and Data Science job applicants frequently lack transparent visibility into b
 - Role & Industry Profiling: Evaluate salary distributions across distinct industries, and primary technical skill requirements to pinpoint high-paying sectors.
 - Career Trajectory & Experience Mapping: Track level experience, management responsibilities, and specialized education correlate with baseline pay and total compensation growth.
 
+## Data Pipeline and Architecture
+[Raw Dataset] ➔ [Power Query ETL] ➔ [Star Schema Data Model] ➔ [Calculated Fields & Parameters] ➔ [Interactive Tableau Workbook]
+
 ## Data Transformation and Cleaning
 To prepare the flat dataset (ai_ds_job_salaries_2026) for optimal modeling and star-schema integration, several Power Query ETL transformations were applied:
 
