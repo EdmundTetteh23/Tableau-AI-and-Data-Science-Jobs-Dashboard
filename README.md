@@ -16,10 +16,11 @@ A multi-dimensional Tableau intelligence project designed to evaluate global com
 ## Overview
 Navigating compensation in AI and Data Science is challenging due to rapid role evolution, regional pay disparities, and varying company sizes. This project builds a centralized business intelligence model using Tableau, transforming unorganized flat file job records into a structured data warehouse schema. The solution allows job seekers and professionals to filter compensation distributions dynamically across geographic locations, experience tiers, and industry sectors.
 
-## Problem Statement
+## Problem Statement and Project Objectives
+### Problem Statement
 AI and Data Science job applicants frequently lack transparent visibility into baseline salaries and realistic compensation benchmarks across different markets. Without standardized salary insights, candidates struggle to evaluate job offers, and determine appropriate compensation expectations during interview negotiations, leading to significant salary undervaluation.
 
-## Project Objectives
+### Project Objectives
 - Compensation Benchmarking: Provide transparent salary insights across global regions, experience levels, and job titles.
 - Geographic Pay Transparency**: Measure compensation variations across company locations.
 - Role & Industry Profiling: Evaluate salary distributions across distinct industries, and primary technical skill requirements to pinpoint high-paying sectors.
