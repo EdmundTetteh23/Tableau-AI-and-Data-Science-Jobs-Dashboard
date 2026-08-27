@@ -36,6 +36,7 @@ To prepare the flat dataset (ai_ds_job_salaries_2026) for optimal modeling and s
 
 ## Data Model and Relationships
 The transformed data architecture follows a clean Star Schema built inside Tableau's Logical Layer, centering around fact_jobs with one-to-many single-direction relationships to all supporting dimensions:
+![Uploading Tableau DM.jpeg…]()
 
 - fact_jobs: Core transactional fact table recording financial metrics and quantitative attributes (salary_usd, bonus_pct, equity_offered_pct, certifications_count, job_satisfaction_score, manages_people, remote_ratio, team_size, weekly_hours).
 
