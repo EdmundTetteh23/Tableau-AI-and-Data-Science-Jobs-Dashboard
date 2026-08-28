@@ -63,7 +63,15 @@ The transformed data architecture follows a clean Star Schema built inside Table
 - dim_education_level: Academic qualification directory (edu_level_id, education_level).
 
 ## Tableau Calculations and Business Logic
-Analytical logic and metric parameter switching implemented via dynamic Tableau Calculated Fields and Dynamic Parameters
+Analytical logic and metric parameter switching implemented via dynamic Tableau Calculated Fields and Dynamic Parameters.
+
+<img width="558" height="659" alt="Metric Parameter" src="https://github.com/user-attachments/assets/ffa0e715-685d-45ae-826a-52e161b2717c" />
+
+<img width="731" height="427" alt="Metric" src="https://github.com/user-attachments/assets/7febcc70-b16b-47c3-8b08-4804539b5e0a" />
+
+<img width="730" height="426" alt="Job Count" src="https://github.com/user-attachments/assets/18d5f769-a897-4a98-9b3a-325cc2732f18" />
+
+<img width="728" height="428" alt="Avg  Salary" src="https://github.com/user-attachments/assets/42d1486c-3497-4fa7-a0b4-fcbef5b5dea4" />
 
 ## Dashboards and Visualizations
 The solution features a dynamic dashboard layout controlled by an upper Metric Switcher (Job Count vs. Avg. Salary), allowing job candidates to toggle seamlessly between market demand volume and compensation benchmarks across identical visual categories:
